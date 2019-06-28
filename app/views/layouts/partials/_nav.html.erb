@@ -5,15 +5,10 @@
       <% if user_signed_in? %>
       <%= current_user.nickname %>
       <li><a href="/tweets/new"><i class="material-icons">create</i></a></li>
-
-      <%= link_to destroy_user_session_path, method: :delete do %>
-        <i class="material-icons"></i>create
-      <% end %>
-
-      <li><a rel="nofollow" method="delete" href="users/sign_out"><i class="material-icons">view_module</i></a></li>
+      <li><a href="/users/sign_out"><i class="material-icons">directions_run</i></a></li>
       <% else %>
-      <li><a href="mobile.html"><i class="material-icons">add</i></a></li>
-      <li><a href="collapsible.html"><i class="material-icons">account_circle</i></a></li>
+      <li><a href="/users/sign_in"><i class="material-icons">account_circle</i></a></li>
+      <li><a href="/users/sign_up"><i class="material-icons">add</i></a></li>
       <% end %>
     </ul>
   </div>
@@ -29,5 +24,5 @@ a {
 ↓こっちが優先される。
 .contents a {
   color: bule;
-  
+
 } -->
