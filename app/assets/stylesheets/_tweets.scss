@@ -16,8 +16,9 @@ html, body {
 }
 
 .content_post {
+  background-size:cover;
   height: 400px;
-  width: 400px;
+  width: 500px;
   margin: 30px auto;
   position: relative;
   background: #ffeaea;
@@ -39,6 +40,11 @@ color: #f08080;
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+
+.pagenation{
+  background-color: white;
 }
 
 .footer s{
