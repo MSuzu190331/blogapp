@@ -5,6 +5,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: url("https://www.instagram.com/p/BcHrERWnrm6/media/?size=l");
+  background-repeat:no-repeat;
+  background-position: left bottom ;
+   background-size: 500px;
+  // background-size: cover;
 }
 
 // ここからコンテンツの中身
@@ -13,6 +18,7 @@ html, body {
   width: 960px;
   margin: 0 auto;
   overflow-y: scroll;   //これつけないとbodyの高さ越したらヘッダーより下にcontent_postがいく。
+  position: relative;
 }
 
 .content_post {
@@ -27,10 +33,15 @@ html, body {
   border-radius: 8px;
 }
 
+.success{
+  position: absolute;
+  margin: auto;
+}
+
 .content_post p {
 text-align: center;
 line-height: 400px;
-color: #f08080;
+color: white;
 }
 
 
@@ -43,7 +54,7 @@ color: #f08080;
 }
 
 
-.pagenation{
+.paginate{
   background-color: white;
 }
 
